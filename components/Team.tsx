@@ -108,7 +108,7 @@ const Team = () => {
             TeamMembers.map((member, index) => (
                 <div key={index} className='flex flex-col justify-between items-center background text-center p-7 h-auto rounded-xl col-span-1'>
                     <h1 className='secondaryText text-xl font-bold leading-[30px] mb-2'>{member.name}</h1>
-                    <h1 className='secondaryText text-lg font-medium leading-[30px] mb-3'>{member.position}</h1>
+                    <h1 className='secondaryText text-lg font-medium leading-[24px] mb-3'>{member.position}</h1>
                     <p className='para text-sm leading-[24px]'>{member.description}</p>
                     <div className="flex gap-2 mt-5">
                         {
