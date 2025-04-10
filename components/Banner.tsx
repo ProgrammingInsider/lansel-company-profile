@@ -5,7 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Banner = ({pageName, page, url}:{pageName:string, page:string, url:string}) => {
   return (
-    <div className="relative w-full h-[50vh] flex flex-col items-center justify-center">
+    <div className="relative w-full h-[30vh] lg:h-[50vh] flex flex-col items-center justify-center">
               <Image
                 src="/images/hero/stationery.jpg"
                 alt="Banner Image"

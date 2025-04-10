@@ -32,8 +32,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className='bottomFooterBg h-20 text-white flex justify-between items-center px-5'>
-        <span>© 2025 Lansel Trading PLC. All Rights Reserved.</span>
+      <div className='bottomFooterBg h-20 text-white flex justify-between items-center px-5 gap-5'>
+        <span className='text-base md:text-lg'>© 2025 Lansel Trading PLC. All Rights Reserved.</span>
         <div className="flex justify-center items-center rounded-full gap-2">
           <Link href={"#"} className='w-8 h-8 flex justify-center items-center primaryBg rounded-full p-2'>
           <FaLinkedinIn  className="text-xl text-white" />

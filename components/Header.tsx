@@ -5,11 +5,13 @@ import { MdOutlineClose } from "react-icons/md";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
     const [hideMenu, setHideMenu] = useState(false);
-    const [activeSection, setActiveSection] = useState("");
     const [isSticky, setIsSticky] = useState(false);
+    const pathname = usePathname();
+
 
     const navLinks = [
         { path: "/", name: "Home" },
@@ -31,17 +33,30 @@ const Header = () => {
     return (
         <div>
             {/* Header Section */}
-            <div className={`lg:flex justify-between items-center background w-full overflow-hidden pr-7 z-50 mx-auto ${isSticky ? "fixed top-0 z-50 rounded-none h-28 shadow-md" : "max-w-xl md:max-w-3xl lg:max-w-5xl top-4 left-4 right-4 self-center mx-auto lg:absolute lg:rounded-full h-36 md:h-24"}`}>
+            <div 
+            className={`lg:flex justify-between items-center background w-screen overflow-hidden pr-7 z-50 mx-auto
+                ${
+                  pathname === "/"
+                    ? isSticky
+                      ? "fixed top-0 z-50 rounded-none h-28 shadow-md"
+                      : "max-w-xl md:max-w-2xl lg:max-w-6xl top-4 left-4 right-4 self-center mx-auto lg:absolute lg:rounded-full h-36 md:h-24"
+                    : isSticky
+                    ? "fixed top-0 z-50 rounded-none h-28 shadow-md"
+                    : "relative h-28"
+                }`}
+            >
                 <div className="lg:flex h-full w-full max-w-7xl mx-auto">
                         <div className={`lg:rounded-s-full flex h-full px-4 justify-between items-center w-full md:w-4/5 mx-auto lg:max-w-7xl`}>
-                            <Image
-                                src={"/images/logo/Logoremoved.png"}
-                                alt={`Lansel Logo`}
-                                width={300}
-                                height={100}
-                                className="w-44 h-full object-cover"
-                                priority
-                            />
+                            <Link href={"/"}>
+                                <Image
+                                    src={"/images/logo/Logoremoved.png"}
+                                    alt={`Lansel Logo`}
+                                    width={300}
+                                    height={100}
+                                    className="w-44 h-full object-cover"
+                                    priority
+                                />
+                            </Link>
                             <RxHamburgerMenu 
                                 className="text-3xl cursor-pointer lg:hidden" 
                                 onClick={() => setHideMenu(true)} 
@@ -72,17 +87,16 @@ const Header = () => {
                             key={path} 
                             href={`${path}`} 
                             className={`navLink py-5 border-b border-gray-200 lg:border-0 lg:py-0 text-nowrap ${
-                                activeSection === path ? "activeLink" : ""
+                                pathname === path ? "primaryText font-bold" : ""
                             }`}
                             onClick={() => {
-                                setActiveSection(path); 
                                 setHideMenu(false);  
                             }}
                         >
                             {name}
                         </Link>
                     ))}
-                    <Link href={"#contact"} className={`hidden w-40 lg:block text-base text-center font-medium border px-5 py-3 btn text-white ${isSticky ? "lg:hidden" : "lg:block"}`}>Get In Touch</Link>
+                    <Link href={"/contactus"} className={`hidden w-40 lg:block text-base text-center font-medium border px-5 py-3 btn text-white ${isSticky ? "lg:hidden" : "lg:block"}`}>Get In Touch</Link>
                 </nav>
             </div>
         </div>

@@ -21,7 +21,7 @@ const products = [
 const filterOptions = [
   { label: "All", value: "all" },
   { label: "Chemicals", value: "chemicals" },
-  { label: "Office Materials & Equipment", value: "stationery" },
+  { label: "Office Materials", value: "stationery" },
 ];
 
 const OurServices = () => {
@@ -37,15 +37,15 @@ const OurServices = () => {
 
         <h1 className="sectionName w-36 mx-auto">Our Services</h1>
         <h1 className="sectionHeader mb-5">Reliable Solutions for Your Business</h1>
-        <p className="mb-10 max-w-5xl mx-auto text-base">At Lansel Trading, we specialize in Chemical Distribution and Office Material & Equipment Distribution, ensuring businesses across Ethiopia have access to high-quality products.</p>
+        <p className="mb-10 max-w-5xl mx-auto text-sm sm:text-base">At Lansel Trading, we specialize in Chemical Distribution and Office Material & Equipment Distribution, ensuring businesses across Ethiopia have access to high-quality products.</p>
 
         {/* Filter Buttons */}
-        <ul className="flex justify-center gap-3 md:gap-5 mx-auto font-semibold capitalize list-none sm:text-base md:text-xl mb-10 spartan-family">
+        <ul className="flex justify-center items-center gap-3 md:gap-5 mx-auto font-semibold capitalize list-none sm:text-base md:text-xl mb-10 spartan-family">
           {filterOptions.map(({ label, value }) => (
             <li
               key={value}
               onClick={() => setFilter(value)}
-              className={`cursor-pointer ${filter === value ? 'primaryText' : ''}`}
+              className={`cursor-pointer ${filter === value ? 'primaryBg text-white px-5 py-2 rounded-xl' : ''}`}
             >
               {label}
             </li>
