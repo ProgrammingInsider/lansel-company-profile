@@ -74,7 +74,7 @@ const Hero = () => {
               {/* Overlay */}
               <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
               {/* Content */}
-              <div className="absolute lg:translate-y-16 inset-0 flex flex-col md:items-start justify-center text-white text-center z-20 w-4/5 max-w-5xl lg:max-w-7xl mx-auto">
+              <div className="absolute lg:translate-y-16 inset-0 flex flex-col items-center sm:items-start justify-center text-white text-center z-20  w-full sm:w-4/5 max-w-5xl lg:max-w-7xl mx-auto">
                 <div className="w-4/5 lg:w-3/5 flex flex-col justify-center">
                   <h1 className="headline">{content.heading}</h1>
                   <p className="sub-headline w-4/5">{content.para}</p>
