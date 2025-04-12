@@ -1,7 +1,7 @@
 import React from 'react'
 import SocialMedia from './SocialMedia'
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaTelegramPlane } from "react-icons/fa";
+// import { FaTelegramPlane } from "react-icons/fa";
 import { PiWhatsappLogoBold } from "react-icons/pi";
 
 
@@ -15,17 +15,17 @@ const TeamMembers = [
             {
               name: "Linkedin",
               icon: <FaLinkedinIn className="text-xl text-white" />,
-              link: "#"
+              link: "https://www.linkedin.com/in/nardos-alemu-710162202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             },
-            {
-              name: "Telegram",
-              icon: <FaTelegramPlane className="text-xl text-white" />,
-              link: "#"
-            },
+            // {
+            //   name: "Telegram",
+            //   icon: <FaTelegramPlane className="text-xl text-white" />,
+            //   link: "#"
+            // },
             {
               name: "WhatsApp",
               icon: <PiWhatsappLogoBold className="text-xl text-white" />,
-              link: "#"
+              link: "https://wa.me/251943074133"
             }
           ]
     },
@@ -37,17 +37,17 @@ const TeamMembers = [
             {
               name: "Linkedin",
               icon: <FaLinkedinIn className="text-xl text-white" />,
-              link: "#"
+              link: "https://www.linkedin.com/in/lamrot-damene-841917227"
             },
-            {
-              name: "Telegram",
-              icon: <FaTelegramPlane className="text-xl text-white" />,
-              link: "#"
-            },
+            // {
+            //   name: "Telegram",
+            //   icon: <FaTelegramPlane className="text-xl text-white" />,
+            //   link: "#"
+            // },
             {
               name: "WhatsApp",
               icon: <PiWhatsappLogoBold className="text-xl text-white" />,
-              link: "#"
+              link: "https://wa.me/251978357404"
             }
           ]
     },
@@ -59,17 +59,17 @@ const TeamMembers = [
             {
               name: "Linkedin",
               icon: <FaLinkedinIn className="text-xl text-white" />,
-              link: "#"
+              link: "https://www.linkedin.com/in/lidiya-tadesse-3117551b4"
             },
-            {
-              name: "Telegram",
-              icon: <FaTelegramPlane className="text-xl text-white" />,
-              link: "#"
-            },
+            // {
+            //   name: "Telegram",
+            //   icon: <FaTelegramPlane className="text-xl text-white" />,
+            //   link: "#"
+            // },
             {
               name: "WhatsApp",
               icon: <PiWhatsappLogoBold className="text-xl text-white" />,
-              link: "#"
+              link: "https://wa.me/251947867131"
             }
           ]
     },
@@ -81,17 +81,17 @@ const TeamMembers = [
             {
               name: "Linkedin",
               icon: <FaLinkedinIn className="text-xl text-white" />,
-              link: "#"
+              link: "https://www.linkedin.com/in/semira-jemal-01a593197"
             },
-            {
-              name: "Telegram",
-              icon: <FaTelegramPlane className="text-xl text-white" />,
-              link: "#"
-            },
+            // {
+            //   name: "Telegram",
+            //   icon: <FaTelegramPlane className="text-xl text-white" />,
+            //   link: "#"
+            // },
             {
               name: "WhatsApp",
               icon: <PiWhatsappLogoBold className="text-xl text-white" />,
-              link: "#"
+              link: "https://wa.me/25126708957"
             }
           ]
     },
